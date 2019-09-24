@@ -29,12 +29,13 @@ birds.each do |duck|
 end
 ```
 
-----
+---
 
-##**Duck** Typing
+## **Duck** Typing
 <small>(from wikipedia)</small>
 >duck typing is a style of dynamic typing in 
 >which **an object's methods and properties 
 >determine the valid semantics**, rather than 
 >its inheritance from a particular class or 
 >implementation of a speciﬁc interface
+
