@@ -114,3 +114,29 @@ a.push("d", "e", "f")
         #=> [1, 2, 3, 4, 5]
 ```
 
+---
+
+## quiz
+
+- 21点实现
+
+
+<aside class="notes">
+def black_jack cards
+  x = cards.select { |x| x!="A" }.reduce(0) do |a, s|
+    if "JQK".include? s
+      a+10
+    else
+      a+s.to_i
+    end
+  end
+
+  count = cards.count("A")
+
+  if x+count <= 11
+    x+count+10
+  elsif x+count
+  end
+end
+
+</aside>

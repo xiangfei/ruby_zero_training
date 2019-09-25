@@ -138,3 +138,31 @@ a.concat(33)   #=> "hello world!"
 ##fixnum to string
 123.to_s(2)              #=> "1111011"
 ```
+
+---
+
+
+## quiz 
+
+- 回文
+
+<aside class="notes">
+	
+```
+class Fixnum 
+  def palindrome_below i
+    (1...self).select{|f| f.to_s(i) == f.to_s(i).reverse}
+  end  
+end
+```
+```
+class Fixnum
+  def palindrome_below2(base)
+    array = (1...self).map {|x| x.to_s(base) }
+    result = array.inject([]) {|a, e| a << e if (0..e.length/2).all? {|x| e[x] == e[-x-1] }; a }
+    result.map {|e| e.to_i(base) }
+  end
+end
+```
+
+</aside>
