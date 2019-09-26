@@ -22,18 +22,26 @@ p dimension([[[1,2],[2,[3,[4]]]],[[3,4],[5]]])
 
 ---
 
-## 创建
+##  写一个ruby gem
 
 
-```ruby
-Thread.new 
+<aside class="notes">
 
-```
+Gem::Specification.new do |s|  
+  s.name        = 'crowdSystem'  
+  s.version     = '1.0.0'  
+  s.date        = '2016-09-18'  
+  s.summary     = "crowdSystem!"  
+  s.description = "crowdSys automated test application"  
+  s.authors     = ["shench"]  
+  s.email       = 'xxxxxxx@xxxnets.com'  
+  s.files       = ["lib/crowdSystem.rb", "lib/crowdSysAction.rb","lib/crowdSysENV.rb","rake/Rakefile","rake/startTest.ini","rake/startTest.rb","testcase/testCase_checkList.txt"]  
+  s.homepage    = 'http://172.17.2.44:9527/welcome/index'
+  s.license     = 'MIT'  
+end
+ </aside>
 
 
----
-
-## 多线程
 
 
 
